@@ -4,7 +4,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--input_paths', nargs='+', required=True)
-parser.add_argument('--keys', nargs='+', required=True)
+parser.add_argument('--keys', required=True)
 args = parser.parse_args()
 
 # imports
@@ -15,7 +15,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-for key in args.keys:
+for key in args.keys.split():
     sorted(args.input_paths)
     yaxis = []
     total = defaultdict(lambda: Counter())
@@ -32,8 +32,8 @@ for key in args.keys:
             yaxis.append(number)
     plt.plot(np.arange(732), yaxis, label=key)
 plt.ylabel('Number of Tweets')
-dates = [0, 60, 120, 180, 240, 300, 360]
 months = ['Jan.', "March", "May", "July", "Sept.", "Nov."]
+dates = [0, 58, 119, 180, 242, 303]
 plt.xticks(dates, months)
 plt.xlabel('Date')
 plt.title("Hashtags used in Tweets per Day in 2020")
