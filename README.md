@@ -34,3 +34,4 @@ I also used an alternative way to analyze how different hashtags have changed th
 <img src=alternative.png width=100% />
 
 **Results**
+As expected, #코로나바이러스, the hashtag for coronavirus in korean, is used the most with tweets in Korean and used in Korea. #coronavirus is used the most in english tweets and in the United States. My alternative analysis shows that ?
