@@ -4,8 +4,9 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--input_paths', nargs='+', required=True)
-parser.add_argument('--keys', required=True)
+parser.add_argument('--keys', nargs='+', required=True)
 args = parser.parse_args()
+print(args.keys)
 
 # imports
 import json
@@ -15,11 +16,11 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-for key in args.keys.split():
+for key in args.keys:
     sorted(args.input_paths)
     yaxis = []
     total = defaultdict(lambda: Counter())
-    error = 0
+    errors = 0
     for path in args.input_paths:
         with open(path) as f:
             temp = json.load(f)
@@ -32,7 +33,7 @@ for key in args.keys.split():
             yaxis.append(number)
     plt.plot(np.arange(732), yaxis, label=key)
 plt.ylabel('Number of Tweets')
-months = ['Jan.', "March", "May", "July", "Sept.", "Nov."]
+months = ["Jan.", "March", "May", "July", "Sept.", "Nov."]
 dates = [0, 58, 119, 180, 242, 303]
 plt.xticks(dates, months)
 plt.xlabel('Date')
