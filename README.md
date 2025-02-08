@@ -31,7 +31,7 @@ After analyzing the tweets, I then created plots using the lang and country resu
 <img src="reduced.lang%23coronavirus.png" width=100%>
 <img src="reduced.lang%23코로나바이러스.png" width=100%>
 I also used an alternative way to analyze how different hashtags have changed throughout the year 2020.
-<img src=alternative.png width=100% />
+<img src=hashtag_trends.png width=100% />
 
 **Results**
 As expected, #코로나바이러스, the hashtag for coronavirus in korean, is used the most with tweets in Korean and used in Korea. #coronavirus is used the most in english tweets and in the United States. My alternative analysis shows that #doctor was used most in July and wasn't used as much towards the end of 2020. 
