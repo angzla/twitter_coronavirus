@@ -36,4 +36,4 @@ When I took CS143, I analyzed the hashtags  '#冠状病毒' '#virus' '#flu' '#si
 <img src=hashtag_trends.png width=100% />
 
 **Results**
-As expected, #코로나바이러스, the hashtag for coronavirus in korean, is used the most with tweets in Korean and used in Korea. #coronavirus is used the most in english tweets and in the United States. My alternative analysis shows that #doctor was used most in July and wasn't used as much towards the end of 2020. 
+As expected, #코로나바이러스, the hashtag for coronavirus in korean, is used the most with tweets in Korean and used in Korea. #coronavirus is used the most in english tweets and in the United States. My alternative analysis shows that #virus was used most in March and wasn't used as much towards the end of 2020, with spikes from #sick and #flu. 
