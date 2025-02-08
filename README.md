@@ -32,10 +32,6 @@ After analyzing the tweets, I then created plots using the lang and country resu
 <img src="reduced.lang%23코로나바이러스.png" width=100%>
 
 I also used an alternative way to analyze how different hashtags have changed throughout the year 2020. 
-
-When I first took CS46, I analyzed #doctor. 
-<img src=alternative.png width=100% />
-
 When I took CS143, I analyzed the hashtags  '#冠状病毒' '#virus' '#flu' '#sick'. 
 <img src=hashtag_trends.png width=100% />
 
